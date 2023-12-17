@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/787e959ce9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Hanzala</span><br> Ghani from Pakistan</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="MYbg11.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a second-year computer science student at UBIT Karachi University, currently excelling in
+                        both academia and practical skills. As a proficient frontend developer, I specialize in HTML,
+                        CSS, and Java script, with a particular focus on React. This expertise extends to having earned
+                        a Frontend Development certificate from Coursera, showcasing my commitment to continuous
+                        learning and staying updated on industry best practices. Beyond frontend technologies, I am a
+                        skilled Python programmer, contributing to my versatility in software development. Additionally,
+                        my proficiency in Microsoft Excel positions me as an adept data handler, capable of leveraging
+                        spreadsheet functionalities for efficient data management and analysis.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content  active-tab" id="skills">
+                        <ul>
+                            <!-- <li><span>Frontend Developr</span><br>Frontend/Backend Developer</li> -->
+                            <li><span>Frontend Developr</span><br>HTML5/CSS/Bootstrap/Javascript/React</li>
+                            <li><span>Python Programing</span><br>Intermediate Level</li>
+                            <li><span>Databases</span><br>Working on MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content " id="experience">
+                        <ul>
+                            <li><span>20203-current</span><br>Private Tutor</li>
+                            <li><span>2022-2023</span><br>Teached Maths/Compute Science at Alam's Institute</li>
+                            <!-- <li><span>000-4995</span><br>Upcoming Skill Experience</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-content " id="education">
+                        <ul>
+                            <li><span>2023</span><br>I'm studying BSCS from UBIT Karachi, and God willing, I will
+                                complete it by 2026 </li>
+                            <li><span>20222</span><br>Intermediate from Govrnment Dehli College Karachi</li>
+                            <li><span>2020</span><br>Matric from The Foundation School Karachi</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <-------Services----->
+    <div id="services">
+        <div class="container">
+            <h1 id="heading">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid blanditiis sit praesentium
+                        totam velit placeat?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programmer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid blanditiis sit praesentium
+                        totam velit placeat?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Databases</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid blanditiis sit praesentium
+                        totam velit placeat?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- ------Portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" id="my-heading">My-Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1aa.png">
+                    <div class="layer">
+                        <h3>My Fitness Web</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius laudantium molestias
+                            delectus tenetur voluptates nemo!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2aa.png">
+                    <div class="layer">
+                        <h3>My Python Project</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius laudantium molestias
+                            delectus tenetur voluptates nemo!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3aaa.png">
+                    <div class="layer">
+                        <h3>My Database Project</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius laudantium molestias
+                            delectus tenetur voluptates nemo!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i>hanzalaghaniabdulghani@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>03302830270</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/hanzala-ghani001/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/DevHanzala"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright<i class="fa-solid fa-copyright"></i> Hanzala Ghani.Made by me</p>
+        </div>
+    </div>
+     
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+    
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+     
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbymoce2GkF84AhhMUIuTlfU9vn8VfyAx39cy0rflNse7g-eiPymwEIti0PAgnHDS1fJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
